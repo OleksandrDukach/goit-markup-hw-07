@@ -75,15 +75,15 @@ address {
 
 /* All navigation */
 
-.header-page-nav {
+.header {
   border-bottom: solid 1px var(--head-border-line);
 }
-.master-menu-nav {
+.header__menu-nav {
   display: flex;
   align-items: center;
 }
 
-.header-logo {
+.header__logo {
   color: var(--logo-color-sec);
   display: inline-block;
   text-decoration-line: none;
@@ -95,15 +95,15 @@ address {
   margin-top: 24px;
   margin-bottom: 25px;
 }
-.sector-logo {
+.logo--blue {
   color: var(--accent-color);
 }
 
-.header-navigation {
+.header__navigation {
   margin-left: 93px;
 }
 
-.page-header-nav {
+.header__page-nav {
   color: var(--secondary-text-color);
   display: flex;
   list-style: none;
@@ -112,15 +112,15 @@ address {
   letter-spacing: 0.02em;
 }
 
-.page-header-nav .item {
+.header__page-nav .header__item {
   margin-right: 50px;
 }
 
-.page-header-nav .item:last-child {
+.header__page-nav .header__item:last-child {
   margin-right: 0px;
 }
 
-.header-nav-link {
+.header__link {
   color: var(--secondary-text-color);
   display: block;
   padding-top: 32px;
@@ -131,24 +131,24 @@ address {
   transition-timing-function: var(--cubic-animation);
 }
 
-.header-nav-link-current {
+.header__link--current {
   color: var(--accent-color);
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.header-nav-link:hover,
-.header-nav-link:focus {
+.header__link:hover,
+.header__link:focus {
   color: var(--accent-color);
 }
 
-.page-header-contacts {
+.header__contacts-list {
   display: flex;
   margin-left: auto;
 }
 
-.page-header-contact {
+.header__contact-info {
   color: var(--primery-text-color);
   display: flex;
   align-items: center;
@@ -164,15 +164,15 @@ address {
   transition-timing-function: var(--cubic-animation);
 }
 
-.page-header-contacts .item {
+.header__contacts-list .header__contact-item {
   margin-right: 50px;
 }
-.page-header-contacts .item:last-child {
+.header__contacts-list .header__contact-item:last-child {
   margin-right: 0px;
 }
 
-.page-header-contact:hover,
-.page-header-contact:focus {
+.header__contact-info:hover,
+.header__contact-info:focus {
   color: var(--accent-color);
 }
 
@@ -180,13 +180,12 @@ address {
 
 .page-hero {
   background-color: var(--footer-bgr-color);
-
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
-.page-hero-title {
+.page-hero__title {
   color: var(--head-text-color);
   font-size: 44px;
   font-weight: 900;
@@ -198,7 +197,7 @@ address {
   margin: 0 auto;
 }
 
-.page-hero-button {
+.page-hero__button {
   color: var(--head-text-color);
   background-color: var(--accent-color);
   font-size: 16px;
@@ -219,8 +218,8 @@ address {
   transition-timing-function: var(--cubic-animation);
 }
 
-.page-hero-button:hover,
-.page-hero-button:focus {
+.page-hero__button:hover,
+.page-hero__button:focus {
   background-color: var(--hover-btn-color);
 }
 
@@ -245,17 +244,17 @@ address {
   margin-bottom: 50px;
 }
 
-.business-qualities-list {
+.benefits {
   display: flex;
 }
 
-.business-qualities {
+.benefits__list {
   margin-right: 30px;
   text-align: left;
   flex-basis: calc((100%-90px) / 4);
 }
 
-.business-qualities:last-child {
+.benefits__list:last-child {
   margin-right: 0px;
 }
 
@@ -275,13 +274,13 @@ address {
   padding-bottom: 94px;
 }
 
-.work-list {
+.work-section__list {
   display: flex;
 }
-.work-item {
+.work-section__item {
   flex-basis: calc((100%-60px) / 3);
 }
-.work-item:not(:last-child) {
+.work-section__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -289,16 +288,16 @@ address {
   background-color: var(--secondary-bgr-color);
 }
 
-.team-list {
+.company-team__list {
   display: flex;
 }
 
-.team-item {
+.company-team__item {
   background-color: var(--head-text-color);
   max-width: 270px;
 }
 
-.team-item:not(:last-child) {
+.company-team__item:not(:last-child) {
   margin-right: 30px;
   flex-basis: calc((100%-90px) / 4);
   border-bottom-left-radius: 4px;
@@ -365,14 +364,14 @@ address {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.project-list {
+.project {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
   margin-bottom: -30px;
 }
 
-.project-card {
+.project__card {
   margin-right: 30px;
   margin-bottom: 30px;
   flex-basis: calc(100% / 3-30px);
@@ -409,7 +408,7 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-logo {
+.footer__logo {
   color: var(--head-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -419,14 +418,14 @@ address {
   text-decoration: none;
 }
 
-.footer-item {
+.footer__item {
   display: block;
 }
-.footer-item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.footer-address {
+.footer__address {
   color: var(--head-text-color);
   margin-top: 20px;
   line-height: 1.71;
@@ -434,11 +433,11 @@ address {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-animation);
 }
-.footer-address:hover,
-.footer-address:focus {
+.footer__address:hover,
+.footer__address:focus {
   color: var(--accent-color);
 }
-.footer-contact {
+.footer__contact {
   color: var(--address-color);
   line-height: 1.71;
   transition-property: color;
@@ -446,8 +445,8 @@ address {
   transition-timing-function: var(--cubic-animation);
 }
 
-.footer-contact:hover,
-.footer-contact:focus {
+.footer__contact:hover,
+.footer__contact:focus {
   color: var(--accent-color);
 }
 
@@ -466,28 +465,28 @@ address {
 }
 
 /* ==========mail and tel icons========== */
-.icon-mail {
+.header__icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.icon-tel {
+.header__icon-tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
 }
 
-.icon:hover,
-.icon:focus {
+.header__icon:hover,
+.header__icon:focus {
   fill: var(--accent-color);
 }
 
 /* ==========Стилізація особливостей========== */
 
-.thumb {
+.benefits__thumb {
   width: 270px;
   height: 120px;
   background-color: var(--secondary-bgr-color);
@@ -531,19 +530,19 @@ address {
   color: var(--head-text-color);
 }
 
-.team-item {
+.company-team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 /* =========Regular customers list========== */
 
-.regular-customers {
+.customers {
   display: flex;
   gap: 30px;
 }
 
-.customers-list-logo {
+.customers__logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -558,45 +557,45 @@ address {
   transition-timing-function: var(--cubic-animation);
 }
 
-.icon-comp {
+.customers__logo--icon-comp {
   fill: currentColor;
 }
 
-.customers-list-logo:hover,
-.customers-list-logo:focus {
+.customers__logo:hover,
+.customers__logo:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
 /* ==========Portfolio page */
 
-.card-link {
+.project__card--link {
   display: block;
   color: inherit;
 }
 
-.card-link:hover,
-.card-link:focus {
+.project__card--link:hover,
+.project__card--link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 /* ==========Footer slogan with icons */
 
-.footer .container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
 
-.footer-box-contact {
+.footer__box-contact {
   margin-right: 70px;
 }
 
-.footer-box-social {
+.footer__box-social {
   margin-right: auto;
 }
 
-.footer-icon-list {
+.footer__icon-list {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -604,7 +603,7 @@ address {
   padding-left: 0;
 }
 
-.footer-slogan {
+.footer__slogan {
   color: var(--head-text-color);
   font-weight: 700;
   line-height: 1.14;
@@ -635,11 +634,11 @@ address {
 
 /* ==========Задали синюю полосу в навигации по страницам========== */
 
-.header-nav-link-current {
+.header__link--current {
   position: relative;
 }
 
-.header-nav-link-current::after {
+.header__link--current::after {
   position: absolute;
   content: '';
   bottom: 0;
@@ -718,7 +717,7 @@ address {
 
 /* ==========Подпись под работами========== */
 
-.work-item {
+.work-section__item {
   position: relative;
 }
 
@@ -741,7 +740,7 @@ address {
 
 /* ===========Наши проекты============= */
 
-.project-card-window {
+.project__card--window {
   position: relative;
   overflow: hidden;
 }
@@ -757,7 +756,7 @@ address {
   transition: transform 250ms var(--cubic-animation);
 }
 
-.window-text {
+.window-overlay__text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
@@ -765,8 +764,8 @@ address {
   padding: 63px 24px;
 }
 
-.card-link:hover .window-overlay,
-.card-link:focus .window-overlay {
+.project__card--link:hover .window-overlay,
+.project__card--link:focus .window-overlay {
   transform: translateY(0);
   opacity: 1;
 }
@@ -774,11 +773,7 @@ address {
 /* ==========HW06========== */
 /* ==========Footer input========== */
 
-.form {
-  width: 570px;
-}
-
-.form-join-window {
+.footer__form--window {
   display: flex;
   /* flex-direction: row;
   justify-content: space-between;
@@ -786,7 +781,7 @@ address {
   margin-top: 20px;
 }
 
-.form-label {
+.footer__label {
   min-width: 358px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -794,7 +789,7 @@ address {
   border-radius: 4px;
 }
 
-.form-input {
+.footer__input {
   width: 100%;
   height: 100%;
   background-color: var(--footer-bgr-color);
@@ -808,7 +803,7 @@ address {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.form-footer-btn {
+.footer__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -824,7 +819,7 @@ address {
   gap: 10px;
 }
 
-.btn-text {
+.footer__btn-text {
   display: flex;
   font-weight: 700;
   font-size: 16px;
@@ -849,7 +844,7 @@ address {
   color: var(--secondary-text-color);
 }
 
-.modal-form-contact {
+.modal__form-contact {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -858,7 +853,7 @@ address {
   transition: border-color 250ms var(--cubic-animation);
 }
 
-.modal-form-label {
+.modal__form-label {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -882,8 +877,8 @@ address {
   outline: var(--accent-color);
 }
 
-.modal-form-contact:focus-within .field-contact,
-.modal-form-contact:hover .field-contact {
+.modal__form-contact:focus-within .field-contact,
+.modal__form-contact:hover .field-contact {
   border: 1px solid var(--accent-color);
 }
 
@@ -909,14 +904,15 @@ address {
   margin-top: 10px;
 }
 
-.comment {
+.comments__text {
   height: 120px;
   resize: none;
   padding: 12px 16px;
   outline: currentColor;
 }
 
-.comments:focus-within .comment {
+.comments:focus-within .comments__text,
+.comments:hover .comments__text {
   border: 1px solid var(--accent-color);
 }
 
@@ -945,7 +941,7 @@ address {
   color: var(--accent-color);
 }
 
-.accept-btn {
+.modal__accept-btn {
   display: flex;
   min-width: 200px;
   background: var(--head-button-bgr-color);
@@ -965,8 +961,8 @@ address {
   cursor: pointer;
 }
 
-.accept-btn:hover,
-.accept-btn:focus {
+.modal__accept-btn:hover,
+.modal__accept-btn:focus {
   background: var(--hover-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
