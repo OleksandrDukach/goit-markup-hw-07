@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --primery-bgr-color: #ffffff;
   --secondary-bgr-color: #f5f4fa;
   --footer-bgr-color: #2f303a;
@@ -28,7 +28,7 @@ body {
 
 /* Defoult styles start color red*/
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -48,9 +48,9 @@ address {
   font-style: normal;
   text-decoration: none;
   margin-top: 20px;
-}
-
-.section {
+} */
+*/ 
+/* .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -71,11 +71,11 @@ address {
 
 .link {
   text-decoration: none;
-}
+} */
 
 /* All navigation */
 
-.header {
+/* .header {
   border-bottom: solid 1px var(--head-border-line);
 }
 .header__menu-nav {
@@ -174,11 +174,11 @@ address {
 .header__contact-info:hover,
 .header__contact-info:focus {
   color: var(--accent-color);
-}
+} */
 
 /* First page */
 
-.page-hero {
+/* .page-hero {
   background-color: var(--footer-bgr-color);
   text-align: center;
   padding-top: 200px;
@@ -221,9 +221,9 @@ address {
 .page-hero__button:hover,
 .page-hero__button:focus {
   background-color: var(--hover-btn-color);
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -234,9 +234,9 @@ address {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
+} */
 
-.section-title {
+/* .section-title {
   color: var(--secondary-text-color);
   font-size: 36px;
   line-height: 1.16;
@@ -322,11 +322,11 @@ address {
   font-size: 16px;
   line-height: 1.18;
   margin-bottom: 16px;
-}
+} */
 
 /* ===========Portfolio page========== */
 
-.button-list {
+/* .button-list {
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -362,9 +362,9 @@ address {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
-.project {
+/* .project {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
@@ -399,11 +399,11 @@ address {
   font-size: 16px;
   line-height: 1.87;
   background-color: var(--head-text-color);
-}
+} */
 
 /* ==========Footer========== */
 
-.footer {
+/* .footer {
   background-color: var(--footer-bgr-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -448,12 +448,12 @@ address {
 .footer__contact:hover,
 .footer__contact:focus {
   color: var(--accent-color);
-}
+} */
 
 /* ==========HW4 add icons========= */
 
 /* =========HERO img========== */
-.overlay {
+/* .overlay {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/header.jpg);
   background-position: center;
@@ -462,10 +462,10 @@ address {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-}
+} */
 
 /* ==========mail and tel icons========== */
-.header__icon-mail {
+/* .header__icon-mail {
   width: 16px;
   height: 12px;
   margin-right: 10px;
@@ -482,11 +482,11 @@ address {
 .header__icon:hover,
 .header__icon:focus {
   fill: var(--accent-color);
-}
+} */
 
 /* ==========Стилізація особливостей========== */
 
-.benefits__thumb {
+/* .benefits__thumb {
   width: 270px;
   height: 120px;
   background-color: var(--secondary-bgr-color);
@@ -496,11 +496,11 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 /* ============Socials-network icons========= */
 
-.icons-social {
+/* .icons-social {
   display: flex;
   justify-content: center;
   gap: 10px;
@@ -533,9 +533,9 @@ address {
 .company-team__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+} */
 
-/* =========Regular customers list========== */
+/* =========Regular customers list==========
 
 .customers {
   display: flex;
@@ -565,9 +565,9 @@ address {
 .customers__logo:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
-}
+} */
 
-/* ==========Portfolio page */
+/* ==========Portfolio page
 
 .project__card--link {
   display: block;
@@ -578,11 +578,11 @@ address {
 .project__card--link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
 /* ==========Footer slogan with icons */
 
-.footer__container {
+/* .footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -628,11 +628,11 @@ address {
 .footer-panel-logo:hover,
 .footer-panel-logo:focus {
   background-color: var(--accent-color);
-}
+} */
 
 /* ==========HW-05========== */
 
-/* ==========Задали синюю полосу в навигации по страницам========== */
+/* ==========Задали синюю полосу в навигации по страницам==========
 
 .header__link--current {
   position: relative;
@@ -647,11 +647,11 @@ address {
   width: 100%;
   height: 4px;
   border-radius: 2px;
-}
+} */
 
 /* ==========MODAL-WINDOW========== */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -713,11 +713,11 @@ address {
 .btn-close:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
-}
+} */
 
 /* ==========Подпись под работами========== */
 
-.work-section__item {
+/* .work-section__item {
   position: relative;
 }
 
@@ -736,11 +736,11 @@ address {
   height: 70px;
   color: var(--head-text-color);
   text-transform: uppercase;
-}
+} */
 
 /* ===========Наши проекты============= */
 
-.project__card--window {
+/* .project__card--window {
   position: relative;
   overflow: hidden;
 }
@@ -768,16 +768,13 @@ address {
 .project__card--link:focus .window-overlay {
   transform: translateY(0);
   opacity: 1;
-}
+} */
 
 /* ==========HW06========== */
 /* ==========Footer input========== */
 
-.footer__form--window {
+/* .footer__form--window {
   display: flex;
-  /* flex-direction: row;
-  justify-content: space-between;
-  align-items: center; */
   margin-top: 20px;
 }
 
@@ -830,11 +827,11 @@ address {
 
 .icon-send {
   fill: var(--head-text-color);
-}
+} */
 
 /* ===========Modal-form inpur========== */
 
-.topic {
+/* .topic {
   display: flex;
   justify-content: center;
   font-weight: 700;
@@ -965,4 +962,4 @@ address {
 .modal__accept-btn:focus {
   background: var(--hover-btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
