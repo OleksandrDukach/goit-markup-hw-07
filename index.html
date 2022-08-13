@@ -24,10 +24,24 @@
 
     <header class="header">
         <div class="container header__menu-nav">
+<<<<<<< Updated upstream
 
             <nav class="header__navigation">
                 <a class="header__logo" href="./index.html"> <span class="logo--blue">Web</span>Studio</a>
                 <div class="header__menu is-open" id="header-menu">
+=======
+            <nav class="header__navigation">
+                <a class="header__logo" href="./index.html"> <span class="logo--blue">Web</span>Studio</a>
+                <button type="button" class="mob-menu-btn" aria-expanded="false" aria-controls="header__mob-menu"
+                    data-menu-button>
+                    <svg width="40" height="40" aria-label="Mобильноe меню">
+                        <use class="mob-menu-btn__menu" href="./images/icons.svg#icon-menu_40px-1"></use>
+                        <use class="mob-menu-btn__cross" href="./images/icons.svg#icon-close"></use>
+                    </svg>
+
+                </button>
+                <div class="header__mob-menu is-open" id="header__mob-menu">
+>>>>>>> Stashed changes
                     <ul class="header__page-nav list">
                         <li class="header__item">
                             <a class="header__link--current link" href="./index.html">Студия</a>
@@ -54,6 +68,7 @@
                                 </svg>+38 096 111 11 11</a>
                         </li>
                     </ul>
+<<<<<<< Updated upstream
                 </div>
             </nav>
             <button type="button" class="header-menu-btn" aria-expanded="false" aria-controls="header-menu"
@@ -63,6 +78,17 @@
                     <use href="./images/icons.svg#icon-close" class="header-menu-btn__cross"></use>
                 </svg>
             </button>
+=======
+                    <ul class="header__social list">
+                        <li class="header__social--item"><a href=""></a>Instagramm</li>
+                        <li class="header__social--item"><a href=""></a>Twitter</li>
+                        <li class="header__social--item"><a href=""></a>Facebook</li>
+                        <li class="header__social--item"><a href=""></a>LinkedIn</li>
+                    </ul>
+                </div>
+
+            </nav>
+>>>>>>> Stashed changes
         </div>
     </header>
     <main>
@@ -473,6 +499,8 @@
     <!-- Ставим перед закрывающим тегом body -->
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    <!-- <script src="./js/mobile-menu.js"></script> -->
 </body>
 
 </html>

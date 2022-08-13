@@ -50,6 +50,7 @@
 /* ==========Footer slogan with icons */
 
 .footer__container {
+<<<<<<< Updated upstream
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
@@ -61,10 +62,21 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
+=======
+  display: flex;
+  align-items: baseline;
+
+  @media screen and (min-width: 480px) {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+>>>>>>> Stashed changes
   }
 }
 
 .footer__box-contact {
+<<<<<<< Updated upstream
   @media screen and (max-width: 1199px) {
     text-align: center;
     margin-bottom: 60px;
@@ -73,6 +85,12 @@
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
     width: 231px;
+=======
+  margin-right: 70px;
+
+  @media screen and (min-width: 480px) {
+    margin: auto;
+>>>>>>> Stashed changes
   }
 }
 

@@ -90,6 +90,11 @@ address {
 }
 
 .container {
+<<<<<<< Updated upstream
+=======
+  max-width: 1200px;
+  min-width: 320px;
+>>>>>>> Stashed changes
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -117,6 +122,7 @@ address {
 }
 
 .header__menu-nav {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,10 +150,14 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< Updated upstream
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+=======
+  margin-left: 93px;
+>>>>>>> Stashed changes
 }
 
 .header__page-nav {
@@ -249,6 +259,57 @@ address {
   width: 100%;
   height: 4px;
   border-radius: 2px;
+}
+
+.mob-menu-btn {
+  position: absolute;
+  top: 20px;
+  left: 100%;
+  fill: currentColor;
+  background-color: #ffffff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: none;
+}
+.mob-menu-btn:hover, .mob-menu-btn:focus {
+  color: var(--accent-color);
+}
+@media screen and (min-width: 768px) {
+  .mob-menu-btn {
+    display: none;
+  }
+}
+
+.mob-menu-btn .mob-menu-btn__cross {
+  display: none;
+}
+
+.mob-menu-btn.is-open .mob-menu-btn__cross {
+  display: block;
+}
+
+.mob-menu-btn.is-open .mob-menu-btn__menu {
+  display: none;
+}
+
+.header__mob-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+.header__mob-menu.is-open {
+  display: block;
 }
 
 .backdrop {
@@ -684,18 +745,45 @@ address {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .benefits__list {
-  margin-right: 30px;
+  margin-bottom: 30px;
   text-align: left;
+<<<<<<< Updated upstream
+=======
+}
+@media screen and (min-width: 480px) {
+  .benefits__list .benefits__list {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits__list .benefits__list {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    margin: auto;
+  }
+>>>>>>> Stashed changes
 }
 
 .benefits__list:last-child {
-  margin-right: 0px;
+  margin-bottom: 60px;
 }
 
 .benefits__thumb {
+<<<<<<< Updated upstream
+=======
+  max-width: 450px;
+  height: 120px;
+>>>>>>> Stashed changes
   background-color: var(--secondary-bgr-color);
   margin-bottom: 30px;
   border: none;
@@ -726,6 +814,11 @@ address {
 .work-section {
   padding-top: 0;
   padding-bottom: 94px;
+}
+@media screen and (max-width: 768px) {
+  .work-section {
+    display: none;
+  }
 }
 
 .work-section__list {
@@ -967,6 +1060,7 @@ address {
 }
 
 /* ==========Footer slogan with icons */
+<<<<<<< Updated upstream
 @media screen and (min-width: 1200px) {
   .footer__container {
     display: -webkit-box;
@@ -1013,6 +1107,38 @@ address {
   .footer__box-social {
     text-align: center;
   }
+=======
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+@media screen and (min-width: 480px) {
+  .footer__container {
+    display: block;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+}
+
+.footer__box-contact {
+  margin-right: 70px;
+}
+@media screen and (min-width: 480px) {
+  .footer__box-contact {
+    margin: auto;
+  }
+}
+
+.footer__box-social {
+  margin-right: auto;
+>>>>>>> Stashed changes
 }
 
 .footer__icon-list {
