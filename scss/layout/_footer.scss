@@ -50,16 +50,40 @@
 /* ==========Footer slogan with icons */
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.footer__container--content {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
 .footer__box-contact {
-  margin-right: 70px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    width: 231px;
+  }
 }
 
 .footer__box-social {
-  margin-right: auto;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .footer__icon-list {
@@ -71,6 +95,8 @@
 }
 
 .footer__slogan {
+  display: block;
+  margin-bottom: 20px;
   color: var(--head-text-color);
   font-weight: 700;
   line-height: 1.14;
@@ -98,8 +124,13 @@
 }
 
 .footer__form--window {
-  display: flex;
-  margin-top: 20px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .footer__label {
@@ -112,7 +143,7 @@
 
 .footer__input {
   width: 100%;
-  height: 100%;
+  height: 50px;
   background-color: var(--footer-bgr-color);
   font-size: 16px;
   line-height: 1.25;
@@ -125,9 +156,10 @@
 }
 
 .footer__button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   margin-left: 12px;
   min-width: 200px;
   padding-top: 10px;

@@ -58,7 +58,7 @@
 .benefits__list {
   margin-right: 30px;
   text-align: left;
-  flex-basis: calc((100% - 90px) / 4);
+  // flex-basis: calc((100% - 90px) / 4);
 }
 
 .benefits__list:last-child {
@@ -66,8 +66,8 @@
 }
 
 .benefits__thumb {
-  width: 270px;
-  height: 120px;
+  // width: 270px;
+  // height: 120px;
   background-color: var(--secondary-bgr-color);
   margin-bottom: 30px;
   border: none;
@@ -108,19 +108,24 @@
 }
 
 .company-team__list {
-  display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
 .company-team__item {
   background-color: var(--head-text-color);
-  max-width: 270px;
+  // max-width: 270px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 
 .company-team__item:not(:last-child) {
-  margin-right: 30px;
-  flex-basis: calc((100% - 90px) / 4);
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .icons-social {
@@ -183,6 +188,8 @@
 .customers {
   display: flex;
   gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .customers__logo {
